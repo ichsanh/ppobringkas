@@ -13,7 +13,7 @@ const Header = () => {
     <header className="w-full fixed top-0 left-0 bg-white shadow-md z-50">
       <div className="container mx-auto">
         <nav className="flex items-center justify-between px-6 py-3">
-          <Link to="/">
+          <Link to="/ppobringkas">
             <img src={Logo} className="w-24 md:w-30" alt="Logo" />
           </Link>
           
@@ -34,7 +34,7 @@ const Header = () => {
           {/* Desktop Menu */}
           <div className="hidden md:flex flex-1 px-12">
             <ul className="flex space-x-8 items-center">
-              <li><Link to="/" className="text-gray-600 hover:text-blue-500 transition">Beranda</Link></li>
+              <li><Link to="/ppobringkas" className="text-gray-600 hover:text-blue-500 transition">Beranda</Link></li>
               <li><a href="#" className="text-gray-600 hover:text-blue-500 transition">Produk</a></li>
               <li><a href="#" className="text-gray-600 hover:text-blue-500 transition">Blog</a></li>
               <li><Link to="/about" className="text-gray-600 hover:text-blue-500 transition">Tentang</Link></li>
@@ -51,7 +51,7 @@ const Header = () => {
         {isMenuOpen && (
           <div className="md:hidden bg-white border-t py-4">
             <ul className="flex flex-col space-y-4 px-6">
-              <li><Link to="/" className="block text-gray-600 hover:text-blue-500 transition">Beranda</Link></li>
+              <li><Link to="/ppobringkas" className="block text-gray-600 hover:text-blue-500 transition">Beranda</Link></li>
               <li><a href="#" className="block text-gray-600 hover:text-blue-500 transition">Produk</a></li>
               <li><a href="#" className="block text-gray-600 hover:text-blue-500 transition">Blog</a></li>
               <li><Link to="/about" className="block text-gray-600 hover:text-blue-500 transition">Tentang</Link></li>
